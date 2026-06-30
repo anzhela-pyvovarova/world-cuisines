@@ -56,6 +56,27 @@ body{
     
 }
 
+.burger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+.burger span{
+    display: block;
+    background: #522501;
+    width: 25px;
+    height: 2px;
+    
+    
+}
+
+
+
 .header .menu a{
     color: #522501;
     text-decoration: none;
@@ -199,4 +220,17 @@ minmax(200px, 1fr));
         font-size: 18px;
     }
 }
+
+@media (max-width: 768px) {
+    .header .menu{
+        display: none;
+    }
+
+    .burger{
+        display: flex;
+        
+    }
+}
+
+
 
